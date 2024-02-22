@@ -1,38 +1,80 @@
-.App {
+.grid {
+  background-color: black;
+  display: grid;
+  height: 500px;
+  width: 1400px;
+}
+
+.row-1 {
+  display: grid;
+  height: 100px;
+  width: 1400px;
+  grid-template-columns: repeat(13, 2fr) 3fr;
+}
+
+.row-2 {
+  display: grid;
+  height: 100px;
+  width: 1400px;
+  grid-template-columns: 3fr repeat(13, 2fr);
+
+}
+
+.row-3 {
+  display: grid;
+  height: 100px;
+  width: 1400px;
+  grid-template-columns: 2fr repeat(11, 1fr) 2fr;
+}
+
+.row-4 {
+  display: grid;
+  height: 100px;
+  width: 1400px;
+  grid-template-columns: 5fr repeat(10, 2fr) 5fr;
+}
+
+.row-5 {
+  display: grid;
+  height: 100px;
+  width: 1400px;
+  grid-template-columns: repeat(3, 1fr) 4fr repeat(4, 1fr);
+}
+
+.key-letter {
+  background-color: grey;
+  border: 1px solid black;
   text-align: center;
+  padding-top: 35px;
+  font-size: x-large;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.key-two {
+  background-color: red;
+  border: 1px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.key-three {
+  background-color: orange;
+  border: 1px solid black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.key-four {
+  background-color: yellow;
+  border: 1px solid black;
 }
 
-.App-link {
-  color: #61dafb;
+.key-five {
+  background-color: green;
+  border: 1px solid black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.key-bottom {
+  background-color: blue;
+  border: 1px solid black;
+}
+
+.key-space {
+  background-color: purple;
+  border: 1px solid black;
 }
