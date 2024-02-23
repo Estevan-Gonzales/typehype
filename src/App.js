@@ -23,11 +23,13 @@ function App() {
       }
     }
 
-    if (event.key === "Shift") {
+    if (event.code === "ShiftRight") {
       let toShow = document.getElementsByClassName("key-double-alt");
       for (let i=0; i<toShow.length; i++) {
         toShow[i].hidden = false;
       }
+      let selectedElement = document.getElementById("keyShiftRight");
+      selectedElement.className = "key-pressed";
 
       let toHide = document.getElementsByClassName("key-double");
       for (let i=0; i<toHide.length; i++) {
@@ -54,7 +56,7 @@ function App() {
       }
     }
 
-    if (event.key === "Shift") {
+    if (event.code === "ShiftRight") {
       let toShow = document.getElementsByClassName("key-double-alt");
       for (let i=0; i<toShow.length; i++) {
         toShow[i].hidden = true;
@@ -64,6 +66,9 @@ function App() {
       for (let i=0; i<toHide.length; i++) {
         toHide[i].hidden = false;
       }
+
+      let selectedElement = document.getElementById("keyShiftRight");
+      selectedElement.className = "key-single";
     }
   })
 
@@ -137,7 +142,7 @@ function App() {
         <div className="key-double-alt" id="keyColon" hidden={true}>:</div>
         <div className="key-double" id="keySingleParenthesis">'</div>
         <div className="key-double-alt" id="keyDoubleParenthesis" hidden={true}>"</div>
-        <div className="key-single">Return</div>
+        <div className="key-single">RETURN</div>
       </div>
 
       <div className="row-4">
@@ -155,7 +160,7 @@ function App() {
         <div className="key-double-alt" id="keyLessThan" hidden={true}></div>
         <div className="key-double" id="keySlash">/</div>
         <div className="key-double-alt" id="keyLessThan" hidden={true}>?</div>
-        <div className="key-single">SHIFT</div>
+        <div className="key-single" id="keyShiftRight">SHIFT</div>
       </div>
 
       <div className="row-5">
