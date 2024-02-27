@@ -5,11 +5,31 @@
   text-align: center;
   padding-top: 30px;
   font-size: xx-large;
+  border-radius: 10px;
+}
+
+.key-number {
+  background-color: red;
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 30px;
+  font-size: xx-large;
+  border-radius: 10px;
+
+}
+
+.key-single {
+  background-color: blue;
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 30px;
+  font-size: xx-large;
+  border-radius: 10px;
+
 }
 
 
-
-.key-number {
+.key-double {
   background-color: red;
   border: 1px solid black;
   text-align: center;
@@ -26,21 +46,8 @@
   font-size: xx-large;
 }
 
-.key-single {
-  background-color: blue;
-  border: 1px solid black;
-  text-align: center;
-  padding-top: 30px;
-  font-size: xx-large;
-}
 
-.key-double {
-  background-color: red;
-  border: 1px solid black;
-  text-align: center;
-  padding-top: 30px;
-  font-size: xx-large;
-}
+
 
 .key-double-alt {
   background-color: red;
@@ -50,14 +57,16 @@
   font-size: xx-large;
 }
 
-
-
 .grid {
   background-color: white;
   display: grid;
   height: 500px;
   width: 1400px;
-  border: solid black 5px;
+  border: solid black 20px;
+  background-color: black;
+  margin-top: 100px;
+  margin-left: 100px;
+  border-radius: 20px;
 }
 .row-1 {
   display: grid;
@@ -90,4 +99,9 @@
   height: 100px;
   width: 1400px;
   grid-template-columns: repeat(3, 1fr) 4fr repeat(4, 1fr);
+}
+
+.filler {
+  background-color: white;
+  border-radius: 10px;
 }

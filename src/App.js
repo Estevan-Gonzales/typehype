@@ -170,8 +170,8 @@ function App() {
         <div className="key-single">SPACE</div>
         <div className="key-single">CMD</div>
         <div className="key-single">OPT</div>
-        <div></div>
-        <div></div>
+        <div className="filler"></div>
+        <div className="filler"></div>
       </div>
 
     </div>
